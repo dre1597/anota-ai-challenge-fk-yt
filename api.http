@@ -1,0 +1,54 @@
+GET http://localhost:8080/api/categories
+
+###
+POST http://localhost:8080/api/categories
+Content-Type: application/json
+
+{
+  "title": "New Category",
+  "description": "This is a new category",
+  "ownerId": "1"
+}
+
+###
+PUT http://localhost:8080/api/categories/1
+Content-Type: application/json
+
+{
+  "title": "Updated Category",
+  "description": "This is an updated category",
+  "ownerId": "1"
+}
+
+###
+DELETE http://localhost:8080/api/categories/1
+
+###
+GET http://localhost:8080/api/products
+
+###
+POST http://localhost:8080/api/products
+Content-Type: application/json
+
+{
+  "title": "New Product",
+  "description": "This is a new product",
+  "ownerId": "1",
+  "categoryId": "66073024a46152642e377dc5",
+  "price": 10000
+}
+
+###
+PUT http://localhost:8080/api/products/1
+Content-Type: application/json
+
+{
+  "title": "Updated Product",
+  "description": "This is an updated product",
+  "ownerId": "1",
+  "categoryId": "1",
+  "price": 20000
+}
+
+###
+DELETE http://localhost:8080/api/products/1

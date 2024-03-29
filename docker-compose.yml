@@ -1,0 +1,18 @@
+version: '3.2'
+services:
+  mongodb:
+    image: mongo
+    restart: unless-stopped
+    ports:
+      - "27027:27017"
+    volumes:
+      - mongodb-anota-ai-data:/data/db
+    networks:
+      - anota-ai
+
+volumes:
+  mongodb-anota-ai-data:
+    driver: local
+
+networks:
+  anota-ai:

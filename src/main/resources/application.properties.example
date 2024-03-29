@@ -1,0 +1,5 @@
+spring.application.name=anota-ai-challenge
+aws.accessKeyId=
+aws.secretAccessKey=
+aws.region=
+aws.sns.topic.catalog.arn=
